@@ -3,7 +3,7 @@ const path = require("path");
 const Sequelize = require("sequelize");
 
 const basename = path.basename(__filename);
-const config = path.resolve(__dirname, "..", "..", "config", "database.js");
+const config = require(`${__dirname}/../../config/database.js`);
 const db = {};
 
 const sequelize = new Sequelize(
