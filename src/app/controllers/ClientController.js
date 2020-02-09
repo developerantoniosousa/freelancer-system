@@ -1,6 +1,6 @@
-import { Client } from "../models";
+import Client from "../models/Client";
 
-class UserController {
+class ClientController {
   async store(req, res) {
     const { email } = req.body;
 
@@ -14,4 +14,4 @@ class UserController {
   }
 }
 
-export default new UserController();
+export default new ClientController();

@@ -1,8 +1,17 @@
-export default (Sequelize, DataTypes) => {
-  const Client = Sequelize.define("Client", {
-    name: DataTypes.STRING,
-    email: DataTypes.STRING
-  });
+import Sequelize, { Model } from "sequelize";
 
-  return Client;
-};
+class Client extends Model {
+  static init(sequelize) {
+    super.init(
+      {
+        name: Sequelize.STRING,
+        email: Sequelize.STRING
+      },
+      { sequelize }
+    );
+
+    return this;
+  }
+}
+
+export default Client;
