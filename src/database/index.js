@@ -2,10 +2,11 @@ import Sequelize from "sequelize";
 
 import Client from "../app/models/Client";
 import Income from "../app/models/Income";
+import Investment from "../app/models/Investment";
 
 import databaseConfig from "../config/database";
 
-const models = [Client, Income];
+const models = [Client, Income, Investment];
 
 class Database {
   constructor() {
