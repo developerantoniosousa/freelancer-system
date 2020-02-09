@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "nodemon src/server.js -e js"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
@@ -14,6 +17,9 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "cz-conventional-changelog": "3.1.0",
-    "husky": "^4.2.1"
+    "dotenv": "^8.2.0",
+    "husky": "^4.2.1",
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
   }
 }
