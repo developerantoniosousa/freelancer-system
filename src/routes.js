@@ -7,5 +7,6 @@ const routes = new Router();
 
 routes.post("/clients", ClientController.store);
 routes.post("/incomes", IncomeController.store);
+routes.get("/incomes", IncomeController.index);
 
 export default routes;
