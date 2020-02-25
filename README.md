@@ -31,3 +31,5 @@ $ npx sequelize db:migrate
 ```
 $ yarn dev \\ or npm run dev
 ```
+
+> Make download of file exported of [Insomnia](https://insomnia.rest/) and import that [file](https://drive.google.com/open?id=10vNXyPV5fc7l2J8HzA-bkKsXXkxb1Ti8)
